@@ -136,18 +136,7 @@
 			var basemaps = {
     			Topography: L.tileLayer.wms('http://ows.mundialis.de/services/service?', {
         			layers: 'TOPO-WMS'
-    			}),
-
-					/* This map is not correct "morocco is divided"*/
-					/*
-    			Places: L.tileLayer.wms('http://ows.mundialis.de/services/service?', {
-        			layers: 'OSM-Overlay-WMS'
-    			}),
-
-    			'Topography, then places': L.tileLayer.wms('http://ows.mundialis.de/services/service?', {
-        			layers: 'TOPO-WMS,OSM-Overlay-WMS'
     			})
-					*/
 			};
 
 			L.control.layers(basemaps).addTo(map);
